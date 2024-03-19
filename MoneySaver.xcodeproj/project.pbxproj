@@ -11,6 +11,13 @@
 		11C5A4A42BA9CD72009877A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5A4A32BA9CD72009877A7 /* SceneDelegate.swift */; };
 		11C5A4AC2BA9CD72009877A7 /* MoneySaver.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11C5A4AA2BA9CD72009877A7 /* MoneySaver.xcdatamodeld */; };
 		11C5A4AE2BA9CD75009877A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C5A4AD2BA9CD75009877A7 /* Assets.xcassets */; };
+		11C5A4B92BA9CF03009877A7 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5A4B82BA9CF03009877A7 /* AppCoordinator.swift */; };
+		11C5A4BB2BA9CF27009877A7 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5A4BA2BA9CF27009877A7 /* LoadingView.swift */; };
+		11C5A4BD2BA9CF4B009877A7 /* LoadingVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5A4BC2BA9CF4B009877A7 /* LoadingVCViewController.swift */; };
+		11C5A4C22BA9D32D009877A7 /* RegisterNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5A4C12BA9D32C009877A7 /* RegisterNameView.swift */; };
+		11C5A4C42BA9D365009877A7 /* RegisterNameVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5A4C32BA9D365009877A7 /* RegisterNameVCViewModel.swift */; };
+		11C5A4C72BA9E27E009877A7 /* SelectCurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5A4C62BA9E27E009877A7 /* SelectCurrencyView.swift */; };
+		11C5A4C92BA9E28F009877A7 /* SelectCurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5A4C82BA9E28F009877A7 /* SelectCurrencyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		11C5A4AB2BA9CD72009877A7 /* MoneySaver.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoneySaver.xcdatamodel; sourceTree = "<group>"; };
 		11C5A4AD2BA9CD75009877A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11C5A4B22BA9CD75009877A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11C5A4B82BA9CF03009877A7 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		11C5A4BA2BA9CF27009877A7 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		11C5A4BC2BA9CF4B009877A7 /* LoadingVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVCViewController.swift; sourceTree = "<group>"; };
+		11C5A4C12BA9D32C009877A7 /* RegisterNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNameView.swift; sourceTree = "<group>"; };
+		11C5A4C32BA9D365009877A7 /* RegisterNameVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNameVCViewModel.swift; sourceTree = "<group>"; };
+		11C5A4C62BA9E27E009877A7 /* SelectCurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyView.swift; sourceTree = "<group>"; };
+		11C5A4C82BA9E28F009877A7 /* SelectCurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +66,60 @@
 		11C5A4A02BA9CD72009877A7 /* MoneySaver */ = {
 			isa = PBXGroup;
 			children = (
+				11C5A4BE2BA9D03F009877A7 /* ViewControllers */,
 				11C5A4A12BA9CD72009877A7 /* AppDelegate.swift */,
 				11C5A4A32BA9CD72009877A7 /* SceneDelegate.swift */,
+				11C5A4B82BA9CF03009877A7 /* AppCoordinator.swift */,
 				11C5A4AD2BA9CD75009877A7 /* Assets.xcassets */,
 				11C5A4B22BA9CD75009877A7 /* Info.plist */,
 				11C5A4AA2BA9CD72009877A7 /* MoneySaver.xcdatamodeld */,
 			);
 			path = MoneySaver;
+			sourceTree = "<group>";
+		};
+		11C5A4BE2BA9D03F009877A7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				11C5A4BF2BA9D04D009877A7 /* LoadingVC */,
+				11C5A4CA2BA9E29B009877A7 /* RegistrationViewControllers */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		11C5A4BF2BA9D04D009877A7 /* LoadingVC */ = {
+			isa = PBXGroup;
+			children = (
+				11C5A4BA2BA9CF27009877A7 /* LoadingView.swift */,
+				11C5A4BC2BA9CF4B009877A7 /* LoadingVCViewController.swift */,
+			);
+			path = LoadingVC;
+			sourceTree = "<group>";
+		};
+		11C5A4C02BA9D310009877A7 /* RegisterNameVC */ = {
+			isa = PBXGroup;
+			children = (
+				11C5A4C12BA9D32C009877A7 /* RegisterNameView.swift */,
+				11C5A4C32BA9D365009877A7 /* RegisterNameVCViewModel.swift */,
+			);
+			path = RegisterNameVC;
+			sourceTree = "<group>";
+		};
+		11C5A4C52BA9E252009877A7 /* SelectCurrencyVC */ = {
+			isa = PBXGroup;
+			children = (
+				11C5A4C62BA9E27E009877A7 /* SelectCurrencyView.swift */,
+				11C5A4C82BA9E28F009877A7 /* SelectCurrencyViewModel.swift */,
+			);
+			path = SelectCurrencyVC;
+			sourceTree = "<group>";
+		};
+		11C5A4CA2BA9E29B009877A7 /* RegistrationViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				11C5A4C02BA9D310009877A7 /* RegisterNameVC */,
+				11C5A4C52BA9E252009877A7 /* SelectCurrencyVC */,
+			);
+			path = RegistrationViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,9 +191,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C5A4C72BA9E27E009877A7 /* SelectCurrencyView.swift in Sources */,
+				11C5A4B92BA9CF03009877A7 /* AppCoordinator.swift in Sources */,
 				11C5A4AC2BA9CD72009877A7 /* MoneySaver.xcdatamodeld in Sources */,
+				11C5A4C22BA9D32D009877A7 /* RegisterNameView.swift in Sources */,
+				11C5A4C42BA9D365009877A7 /* RegisterNameVCViewModel.swift in Sources */,
 				11C5A4A22BA9CD72009877A7 /* AppDelegate.swift in Sources */,
+				11C5A4BB2BA9CF27009877A7 /* LoadingView.swift in Sources */,
+				11C5A4BD2BA9CF4B009877A7 /* LoadingVCViewController.swift in Sources */,
 				11C5A4A42BA9CD72009877A7 /* SceneDelegate.swift in Sources */,
+				11C5A4C92BA9E28F009877A7 /* SelectCurrencyViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
